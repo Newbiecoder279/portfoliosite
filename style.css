@@ -1,0 +1,128 @@
+body{
+    padding: 0;
+    
+    box-sizing: border-box;
+    background-color:rgb(45,50,80);
+}
+h2{
+    top:0;
+    left:0;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+#links{
+    font-family: Arial, Helvetica, sans-serif;
+    
+    display:flex;
+   padding: 20px;
+   position:absolute;
+   top:0;
+   right:0;
+  
+}
+
+#links li{
+    list-style-type:none;
+}
+a{
+    text-decoration: none;
+    color:white;
+    padding:5px 10px;
+    margin-left:5px;
+    
+   
+}
+.container{
+    width: 100%;
+    height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.container{
+    padding:0;
+}
+.container h1{
+    font-size: 80px;
+    font-weight: 600;
+}
+h1{
+    color: black;
+}
+span{
+    color:#fff724;
+}
+#logo{
+    width:50px;
+    height:50px;
+}
+.imglinks{
+    position:relative;
+    display: flex;
+    place-content: center;
+    padding: 0px;
+}
+#titleabout{
+    font-size: 80px;
+    text-decoration:underline ;
+
+}
+p{
+    color:white;
+    font-size:50px;
+    
+}
+.about{
+    display:grid;
+    align-items: center;
+    grid-template-columns:  1fr 1fr;
+    column-gap: 50px;
+}
+#profilepic{
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+}
+.projects p:hover{
+    color: #fff724;
+}
+iframe{
+    width:100%;
+    height:1000px;
+}
+
+.contacts{
+    width:100%;
+    height:100%;
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+form{
+    background:#001660;
+    display:flex;
+    flex-direction: column;
+    padding:2vw 4vw;
+    width:90%;
+    max-width: 600px;
+    border-radius: 10px;
+}form input, form textarea{
+    border:0;
+    margin:10px, 0;
+    padding:20px;
+    outline:none;
+    background: #f5f5f5;
+    font-size:16px;
+}
+form button{
+    padding:15px;
+    background:#fff724;
+    font-size:18px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    width:150px;
+    margin:20px auto 0;
+    border-radius:30px;
+}

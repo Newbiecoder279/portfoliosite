@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="portfolio">
+        <h2 id="name">Suvashish Tuladhar</h2>
+        
+    <ul id="links">
+     <li><a href="#home" class="scroll-link">Home</a></li>
+     <li><a href="#about" class="scroll-link">About</a></li>
+     <li><a href="#projects" class="scroll-link">Projects</a></li>
+    <li><a href="#resume" class="scroll-link">Resume</a></li>
+    <li><a href="#touch" class="scroll-link">Get in touch</a></li>
+    </ul> 
+   
+    </script>    
+    </div>
+    <div class="container">
+    <h1>A <span class="auto-type"></span></h1>
+</div>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed(".auto-type", {strings: ["Computer Science student","Tech Enthusiast"]
+    ,typeSpeed:150,
+    backSpeed:150,
+    loop:true})
+</script>
+<div class="imglinks">
+    <a href="https://shorturl.at/dnHV5"><img id="logo" src="logo-facebook.svg"></a>
+    <a href="https://shorturl.at/qJSUV"><img id="logo" src="logo-instagram.svg"></a>
+    <a href="https://shorturl.at/aiKQ1"><img id="logo" src="logo-linkedin.svg"></a>
+</div>
+<h2 id="titleabout">About</h2>
+<div class="about">
+    
+    <img id="profilepic" src="profile.jpg" alt="profilepic">
+<div class="abouttext">
+    <p>I am Suvashish Tuladhar, a Bsc.CSIT(Computer Science and Information Technology) student studying at St.Xavier's college.
+        I am currently living and studying in my home town Kathmandu, Nepal.
+    </p>
+</div>
+</div>
+<h2 id="titleabout">Projects</h2>
+<div class="projects">
+    
+    <a  href="https://newbiecoder279.github.io/learingdump2/"><p>A portfolio project I made for my friend(its a joke)</p></a>
+    <a  href="https://newbiecoder279.github.io/learingdump/"><p>A Christmas Present</p></a>
+    <a  href=" https://newbiecoder279.github.io/noobscalculator/"><p>Calculator</p></a>
+ 
+ </div>
+    <h2 id="titleabout">Resume</h2>
+
+    <div class="CV">
+<iframe src="CV.pdf" frameborder="0"></iframe>
+    </div>
+    <h2 id="titleabout">Contacts</h2>
+    <div class="contacts">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h2>Get In Touch</h2>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email Id" required>
+            <input type="text" id="phone" placeholder="Your Phone no." required>
+            <textarea id="message" rows="4" placeholder="How can I help you?"></textarea>
+            <button type="submit">Submit</button>
+
+        </form>
+       
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+    Host : "smtp.gmail.com",
+    Username : "suvashishtuladhar123@gmail.com",
+    Password : "password",
+    To : 'suvashish58@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "This is the subject",
+    Body : "Name: "+document.getElementById("name").value
+    +"<br> Email: "+document.getElementById("email").value
+    +"<br> Phone number: "+document.getElementById("phone").value
+    +"<br> Message: "+document.getElementById("message").value
+}).then(
+  message => alert("Message sent successfully!!")
+);
+        }
+    </script>
+</body>
+</html>
